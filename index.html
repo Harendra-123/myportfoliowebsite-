@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio website</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .purple{
+      color:aqua;
+    }
+    body {
+      background-color: rgb(0,0,33);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      background-color: rgb(0,0,70);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      height: 70px;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    nav ul li {
+      list-style: none;
+      margin: 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+    nav ul li a:hover {
+      font-size: 1.1rem;
+      color: lavender;
+    }
+    .left {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    .first {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 60px 20px;
+      gap: 20px;
+    }
+    .first > div {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+    .leftsection {
+      font-size: 2rem;
+    }
+    .rightsection img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      border: 4px solid aqua;
+    }
+    .second {
+      max-width: 90vw;
+      margin: auto;
+      text-align: center;
+    }
+    .second h1 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    .second .box {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 30px 0;
+    }
+    .second .vertical {
+      flex: 1;
+      min-width: 200px;
+      max-width: 250px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 15px;
+    }
+    .second .vertical img {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+    .second .vertical p {
+      font-size: 14px;
+      color: gray;
+    }
+    .third {
+      max-width: 90vw;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .contact-box {
+      margin: auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 400px;
+      background: rgb(0,0,50);
+    }
+    .contact-box input, 
+    .contact-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .contact-box button {
+      width: 100%;
+      padding: 12px;
+      background: #0077ff;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .contact-box button:hover {
+      background: #005ec4;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: rgb(0,0,50);
+      margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+      .leftsection {
+        font-size: 1.5rem;
+      }
+      .rightsection img {
+        width: 200px;
+        height: 200px;
+      }
+      nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+      }
+    }
+    @media (max-width: 480px) {
+      .left {
+        font-size: 1.1rem;
+      }
+      .leftsection {
+        font-size: 1.3rem;
+      }
+      .second .box {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .typed-cursor{
+      color:aqua;
+    }
+    #typed{
+      color:aqua;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Mr.harendra,</div>
+      <div class="right">
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skill">Skill</a></li>
+          <li><a href="#Project">Project</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav> 
+  </header>
+  <section id="Home">
+  <main>
+    <section id="About" class="first">
+      <div class="leftsection">Hi, my name is <span class="purple">harendra</span>
+        <div>and I am a web developer</div>
+        <span id="typed"></span>
+      </div>
+      <div class="rightsection">
+        <img src="harendrapng.jpg" alt="Profile">
+      </div>
+    </section>
+    
+    <hr>
+    
+    <section id="Skill" class="second">
+      <span class="text-gray">what I have done so far</span>
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <img src="htmlpng.png" alt="html">
+          <span>Html developer</span>
+          <p>I am a full stack software developer with a passion for creating innovative software as well as interactive and responsive web applications.</p>
+        </div>
+        <div class="vertical">
+          <img src="linkdinpng.png" alt="linkedin">
+          <span>LinkedIn professional</span>
+          <p>I am a full stack software developer with a passion for creating innovative software as well as interactive and responsive web applications.</p>
+        </div>
+        <div class="vertical">
+          <img src="facebookpng.png" alt="facebook">
+          <span>Facebook account</span>
+          <p>I am a full stack software developer with a passion for creating innovative software as well as interactive and responsive web applications.</p>
+        </div>
+        <div class="vertical">
+          <img src="instapng.jpg" alt="instagram">
+          <span>Insta account</span>
+          <p>I am a full stack software developer with a passion for creating innovative software as well as interactive and responsive web applications.</p>
+        </div>
+      </div>
+    </section>
+    
+    <hr>
+    
+    <section id="Contact" class="third">
+      <h1 class="contact">Contact me</h1>
+      <div class="contact-box">
+        <!-- ✅ id added -->
+        <form id="contact-form">
+          <input type="text" placeholder="Your Name" name="name" required>
+          <input type="email" placeholder="Your Email" name="email" required>
+          <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      Your welcome to my portfolio website @2023-27
+    </footer>
+  </main>
+  </section>
+  
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    new Typed("#typed", {
+      strings: ["Welcome to my portfolio website"],
+      typeSpeed: 120,
+      loop: true
+    });
+  </script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("YOUR_PUBLIC_KEY"); // 🔑 Apna PUBLIC KEY daalo
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+        .then(function() {
+          alert("✅ Message sent successfully!");
+        }, function(error) {
+          alert("❌ Failed to send: " + JSON.stringify(error));
+        });
+    });
+  </script>
+</body>
+</html>
